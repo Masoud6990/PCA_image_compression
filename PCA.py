@@ -72,7 +72,7 @@ plt.imshow(imgs[0], cmap='gray')
 imgs_flatten = np.array([im.reshape(-1) for im in imgs])
 print(f'imgs_flatten shape: {imgs_flatten.shape}')
 
-# Centering the data in order to get the covariance matrix
+# Centering the data to get the covariance matrix
 X = center_data(imgs_flatten)
 plt.imshow(X[0].reshape(64,64), cmap='gray')
 
